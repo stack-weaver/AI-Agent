@@ -42,5 +42,3 @@ Built with the latest in fullstack web tech: **Next.js 15**, **better-auth**, **
 
 ---
 
-## 📁 Project Structure
-
