@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "My AI Agent",
-  description: "It's an AI coach for you!",
+  description:
+    "My AI Agent is your personalized AI-powered assistant — seamlessly blending real-time video, secure multi-provider authentication, and smart conversational AI into a sleek, modern UI.",
 };
 
 export default function RootLayout({
