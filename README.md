@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 My AI Agent
 
-## Getting Started
+**My AI Agent** is your personalized AI-powered assistant — seamlessly blending real-time video, secure multi-provider authentication, and smart conversational AI into a sleek, modern UI.
 
-First, run the development server:
+Built with the latest in fullstack web tech: **Next.js 15**, **better-auth**, **Neon PostgreSQL**, **Stream Video SDK**, **OpenAI GPT**, and **shadcn/ui**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🔐 **Better Auth with OAuth (GitHub + Google)**  
+  Effortless authentication powered by [better-auth](https://www.better-auth.com/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🧠 **Smart AI Agent (ChatGPT)**  
+  Get natural, contextual conversations using OpenAI's GPT models.
 
-## Learn More
+- 🎥 **Stream Video SDK**  
+  Real-time face-to-face interactions with high-quality video.
 
-To learn more about Next.js, take a look at the following resources:
+- 🗄️ **Neon PostgreSQL**  
+  Serverless Postgres database built for modern cloud workflows.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🎨 **shadcn/ui + Tailwind CSS**  
+  Clean, accessible UI powered by headless components and utility-first styling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ⚡ **Next.js 15 (App Router + Server Actions)**  
+  Fully integrated server components and modern routing patterns.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Tech                | Purpose                         |
+|---------------------|---------------------------------|
+| **Next.js 15**      | Fullstack React framework       |
+| **better-auth**     | Auth & session management       |
+| **Neon**            | PostgreSQL database             |
+| **Stream Video SDK**| Video streaming & calling       |
+| **OpenAI (ChatGPT)**| Conversational AI agent         |
+| **shadcn/ui**       | UI library built on Radix + Tailwind |
+| **TypeScript**      | Type-safe development           |
+
+---
+
+## 📁 Project Structure
+
