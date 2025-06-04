@@ -14,10 +14,11 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./ui/dialog";
+import { ReactNode } from "react";
 
 interface ResponsiveDialogProps {
   title: string;
-  description: string;
+  description: string | ReactNode;
   children: React.ReactNode;
   open: boolean;
   onOpenChange: (open: boolean) => void;
