@@ -1,5 +1,5 @@
 "use client";
-
+import Link from 'next/link'
 
 import { HomeHeader } from "../components/header";
 
@@ -21,18 +21,18 @@ export const HomeView = () => {
             Your personalized AI-powered assistant for seamless meetings, agent management, and smart collaboration. Get started with quick actions below!
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 w-full justify-center">
-            <a
+            <Link
               href="/meetings"
               className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-2 rounded-lg bg-primary text-primary-foreground font-medium text-center transition hover:bg-primary/90 text-base sm:text-lg"
             >
               Go to Meetings
-            </a>
-            <a
+            </Link>
+            <Link
               href="/agents"
               className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-2 rounded-lg border border-primary text-primary font-medium text-center transition hover:bg-primary/10 text-base sm:text-lg"
             >
               Go to Agents
-            </a>
+            </Link>
           </div>
         </section>
       </main>
