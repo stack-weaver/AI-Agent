@@ -49,6 +49,26 @@ export const HomeView = () => {
             </Link>
           </div>
         </section>
+        {/* Placeholder for Agent List */}
+        <section className="w-full max-w-6xl flex flex-col items-center mt-4">
+          <div className="w-full max-w-2xl mb-6">
+            <Card className="border-dashed border-2 border-yellow-400 bg-yellow-50 text-yellow-900 flex flex-col items-center justify-center py-10">
+              <CardTitle className="text-2xl font-bold mb-2">Agent List</CardTitle>
+              <CardDescription className="mb-4">A list of your AI agents will appear here.</CardDescription>
+              <span className="inline-block px-4 py-2 rounded bg-yellow-200 text-yellow-800 font-semibold text-lg">Coming Soon</span>
+            </Card>
+          </div>
+        </section>
+        {/* Placeholder for Meeting Section */}
+        <section className="w-full max-w-6xl flex flex-col items-center">
+          <div className="w-full max-w-2xl">
+            <Card className="border-dashed border-2 border-blue-400 bg-blue-50 text-blue-900 flex flex-col items-center justify-center py-10">
+              <CardTitle className="text-2xl font-bold mb-2">Meeting Section</CardTitle>
+              <CardDescription className="mb-4">Upcoming and past meetings will be shown here.</CardDescription>
+              <span className="inline-block px-4 py-2 rounded bg-blue-200 text-blue-800 font-semibold text-lg">Coming Soon</span>
+            </Card>
+          </div>
+        </section>
         <section className="w-full max-w-6xl">
           <div className="flex items-center justify-between mb-4 sm:mb-6">
             <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
