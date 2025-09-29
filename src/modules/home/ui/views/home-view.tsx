@@ -73,24 +73,32 @@ export const HomeView = () => {
             />
           )}
           {!isLoading && !error && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              {(data?.items ?? []).map((agent) => (
-                <Link key={agent.id} href={`/agents/${agent.id}`} className="group">
-                  <Card className="h-full transition-colors group-hover:border-primary">
-                    <CardHeader>
-                      <CardTitle className="text-lg sm:text-xl">
-                        {agent.name}
-                      </CardTitle>
-                      <CardDescription className="text-muted-foreground">
-                        {agent.instructions.length > 120
-                          ? `${agent.instructions.slice(0, 120)}...`
-                          : agent.instructions}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </Link>
-              ))}
-            </div>
+            <>
+              {(data?.items?.length ?? 0) > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                  {data?.items.map((agent) => (
+                    <Link key={agent.id} href={`/agents/${agent.id}`} className="group">
+                      <Card className="h-full transition-colors group-hover:border-primary">
+                        <CardHeader>
+                          <CardTitle className="text-lg sm:text-xl">
+                            {agent.name}
+                          </CardTitle>
+                          <CardDescription className="text-muted-foreground">
+                            {agent.instructions.length > 120
+                              ? `${agent.instructions.slice(0, 120)}...`
+                              : agent.instructions}
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="py-8 text-center text-muted-foreground text-base sm:text-lg">
+                  No AI agent created.
+                </div>
+              )}
+            </>
           )}
         </section>
       </main>
